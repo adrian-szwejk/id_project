@@ -20,7 +20,7 @@ class Card extends StatelessWidget {
         elevation: 0.0,
       ),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 10.0),
+        padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -29,6 +29,10 @@ class Card extends StatelessWidget {
                 backgroundImage: AssetImage("assets/malpa.jpg"),
                 radius: 40.0,
               ),
+            ),
+            const Divider(
+              height: 60.0,
+              color: Colors.black,
             ),
             const Text(
               "NAME",
