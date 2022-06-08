@@ -24,6 +24,10 @@ class Card extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            const CircleAvatar(
+              backgroundImage: AssetImage("assets/malpa.jpg"),
+              radius: 40.0,
+            ),
             const Text(
               "NAME",
               style: TextStyle(
@@ -68,7 +72,7 @@ class Card extends StatelessWidget {
                   Icons.email,
                   color: Colors.black,
                 ),
-                SizedBox(width: 5.0),
+                SizedBox(width: 10.0),
                 Text(
                   "malpa.krowa@gmail.com",
                   style: TextStyle(
