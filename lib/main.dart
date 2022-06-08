@@ -15,6 +15,8 @@ class Card extends StatefulWidget {
 }
 
 class _CardState extends State<Card> {
+  int userLevel = 0; //User's level that is displayed under "current Id level"
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,6 +26,17 @@ class _CardState extends State<Card> {
         centerTitle: true,
         backgroundColor: Colors.grey[800],
         elevation: 0.0,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            userLevel++;
+          });
+        },
+        backgroundColor: Colors.black,
+        child: const Icon(
+          Icons.add,
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(30.0, 30.0, 30.0,
@@ -72,9 +85,9 @@ class _CardState extends State<Card> {
               ),
             ),
             const SizedBox(height: 5.0),
-            const Text(
-              "3",
-              style: TextStyle(
+            Text(
+              "$userLevel",
+              style: const TextStyle(
                 fontSize: 40.0,
                 color: Colors.amber,
                 letterSpacing: 2.0,
