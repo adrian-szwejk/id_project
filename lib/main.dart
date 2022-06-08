@@ -6,9 +6,15 @@ void main() {
   ));
 }
 
-class Card extends StatelessWidget {
+//Text & pfp of user
+class Card extends StatefulWidget {
   const Card({Key? key}) : super(key: key);
 
+  @override
+  State<Card> createState() => _CardState();
+}
+
+class _CardState extends State<Card> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +26,7 @@ class Card extends StatelessWidget {
         elevation: 0.0,
       ),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0,
+        padding: const EdgeInsets.fromLTRB(30.0, 30.0, 30.0,
             10.0), //Adding padding around edges of body so that all the children will be closer to the center
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
