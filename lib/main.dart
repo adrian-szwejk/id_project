@@ -24,9 +24,11 @@ class Card extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            const CircleAvatar(
-              backgroundImage: AssetImage("assets/malpa.jpg"),
-              radius: 40.0,
+            const Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage("assets/malpa.jpg"),
+                radius: 40.0,
+              ),
             ),
             const Text(
               "NAME",
