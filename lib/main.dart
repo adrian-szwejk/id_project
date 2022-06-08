@@ -32,6 +32,35 @@ class Card extends StatelessWidget {
                 letterSpacing: 2.0,
               ),
             ),
+            SizedBox(height: 10.0),
+            Text(
+              "Malpa",
+              style: TextStyle(
+                fontSize: 40.0,
+                color: Colors.amber,
+                letterSpacing: 2.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 30.0),
+            Text(
+              "CURRENT ID LEVEL",
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+                letterSpacing: 2.0,
+              ),
+            ),
+            SizedBox(height: 10.0),
+            Text(
+              "3",
+              style: TextStyle(
+                fontSize: 40.0,
+                color: Colors.amber,
+                letterSpacing: 2.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
             SizedBox(height: 30.0),
           ],
         ),
