@@ -19,8 +19,22 @@ class Card extends StatelessWidget {
         backgroundColor: Colors.grey[800],
         elevation: 0.0,
       ),
-      body: const Padding(
+      body: Padding(
         padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 10.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: const <Widget>[
+            Text(
+              "NAME",
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+                letterSpacing: 2.0,
+              ),
+            ),
+            SizedBox(height: 30.0),
+          ],
+        ),
       ),
     );
   }
