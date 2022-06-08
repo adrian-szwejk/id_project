@@ -20,7 +20,8 @@ class Card extends StatelessWidget {
         elevation: 0.0,
       ),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0, 10.0),
+        padding: const EdgeInsets.fromLTRB(30.0, 20.0, 30.0,
+            10.0), //Adding padding around edges of body so that all the children will be closer to the center
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -29,11 +30,13 @@ class Card extends StatelessWidget {
                 backgroundImage: AssetImage("assets/malpa.jpg"),
                 radius: 40.0,
               ),
+              //Added Circle avatar which is a flutter widget that makes crops an image into a circle
             ),
             const Divider(
               height: 60.0,
               color: Colors.black,
             ),
+            //Creates a small line division that can be shown w/ a color (the heigh is the space around the line, not the height of the line itself)
             const Text(
               "NAME",
               style: TextStyle(
@@ -43,6 +46,7 @@ class Card extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 5.0),
+            //SizedBox is added to create a space between children either vertically or horizontally
             const Text(
               "Malpa",
               style: TextStyle(
